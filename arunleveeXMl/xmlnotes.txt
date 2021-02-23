@@ -1,0 +1,35 @@
+note.xml
+<?xml version="1.0" ?>
+<note> 
+	<option_1>bring vegetables</option_1>
+	<option_2>eat cake</option_2>
+	<option_3>help mom</option_3>
+	<option_4>watch show at 4pm</option_4>
+</note>
+
+note.dtd
+<!ELEMENT note(option_1 , option_2,option_3,option_4)>
+<!ELEMENT option_1(#PCDATA)>
+<!ELEMENT option_2(#PCDATA)>
+<!ELEMENT option_3(#PCDATA)>
+<!ELEMENT option_4(#PCDATA)>
+
+note.xsd
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xs:element name = "note">
+	<xs:complexType>
+		<xs:sequence>
+		<xs:element name="option_1" type="xs:string">
+		<xs:element name="option_2" type="xs:string">
+		<xs:element name="option_3" type="xs:string">
+		<xs:element name="option_4" type="xs:string">
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>
+		

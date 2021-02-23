@@ -1,0 +1,5 @@
+<!ELEMENT note(option_1 , option_2,option_3,option_4)>
+<!ELEMENT option_1(#PCDATA)>
+<!ELEMENT option_2(#PCDATA)>
+<!ELEMENT option_3(#PCDATA)>
+<!ELEMENT option_4(#PCDATA)>
